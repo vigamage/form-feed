@@ -1,0 +1,13 @@
+<form [formGroup]="dataForm">
+  <label>
+    Name:
+    <input type="text" formControlName="name">
+  </label>
+  <br/><br/>
+  <label>
+    Age:
+    <input type="number" formControlName="age">
+  </label>
+  <br/><br/>
+  <button [disabled]="!dataForm.valid">submit</button>
+</form>
